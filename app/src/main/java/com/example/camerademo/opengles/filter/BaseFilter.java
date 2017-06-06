@@ -184,7 +184,7 @@ public class BaseFilter {
         GLES20.glDisableVertexAttribArray(mGLAttribTextureCoordinate);
         onDrawArraysAfter();
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, 0);
-        Log.e("BaseFilter", "mGLAttribPosition" + mGLAttribPosition + "mGLAttribTextureCoordinate" + mGLAttribTextureCoordinate);
+//        Log.e("BaseFilter", "mGLAttribPosition" + mGLAttribPosition + "mGLAttribTextureCoordinate" + mGLAttribTextureCoordinate);
         return OpenGlUtils.ON_DRAWN;
     }
 

@@ -3,7 +3,6 @@ package com.example.camerademo.opengles.filter;
 import android.content.Context;
 import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
-import android.util.Log;
 
 import com.example.camerademo.R;
 import com.example.camerademo.opengles.OpenGlUtils;
@@ -94,12 +93,12 @@ public class CameraFilter extends BaseFilter {
         GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, 0);
         GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, 0);
         GLES20.glViewport(0, 0, mOutputWidth, mOutputHeight);
-        Log.e("CameraFilter", "mOutputWidth" + mOutputWidth + "mOutputHeight" + mOutputHeight);
+//        Log.e("CameraFilter", "mOutputWidth" + mOutputWidth + "mOutputHeight" + mOutputHeight);
         return mFrameBufferTextures[0];
     }
     @Override
     public int draw(int textureId, FloatBuffer vertexBuffer, FloatBuffer textureBuffer) {
-        Log.e("CameraFilter", "vertexBuffer    " + vertexBuffer.toString());
+//        Log.e("CameraFilter", "vertexBuffer    " + vertexBuffer.toString());
         GLES20.glUseProgram(mProgram);
         runPendingOnDrawTasks();
         vertexBuffer.position(0);

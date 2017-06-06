@@ -97,7 +97,7 @@ public class CoolFilter extends BaseFilter {
         if (this.mToneCurveTexture[0] != -1){
             GLES20.glActiveTexture(GLES20.GL_TEXTURE3);
             GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mToneCurveTexture[0]);
-            Log.e("CoolFilter" ,  "mToneCurveTextureUniformLocation" + mToneCurveTextureUniformLocation  + "mprogram" + mProgram);
+//            Log.e("CoolFilter" ,  "mToneCurveTextureUniformLocation" + mToneCurveTextureUniformLocation  + "mprogram" + mProgram);
             GLES20.glUniform1i(this.mToneCurveTextureUniformLocation, 3);
         }
     }
