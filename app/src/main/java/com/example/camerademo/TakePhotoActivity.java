@@ -37,6 +37,7 @@ public class TakePhotoActivity extends Activity implements View.OnClickListener 
 
     private static final int PERMISSION_CAMERA_REQUEST = 1;
     private static final int PERMISSION_WRITE_REQUEST = 2;
+    private static final int PERMISSION_RECORD_AUDIO_REQUEST = 3;
     private CameraView mCv;
     private ImageView mThumbnailIv;
     private List<File> files;
@@ -94,6 +95,9 @@ public class TakePhotoActivity extends Activity implements View.OnClickListener 
         }
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_WRITE_REQUEST);
+        }
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, PERMISSION_RECORD_AUDIO_REQUEST);
         }
     }
 
