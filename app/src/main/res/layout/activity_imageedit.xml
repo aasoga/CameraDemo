@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/iv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:background="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/tv_effect"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="增强"/>
+        <TextView
+            android:id="@+id/tv_filter"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="滤镜"/>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </HorizontalScrollView>
+<RelativeLayout
+    android:id="@+id/seekbar_rl"
+    android:visibility="gone"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/seekbar_cancel"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/seekbar_confirm"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+</RelativeLayout>
+</RelativeLayout>

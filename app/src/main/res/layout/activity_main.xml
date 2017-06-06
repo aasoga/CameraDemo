@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.camerademo.MainActivity">
+
+
+    <Button
+        android:id="@+id/bt_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+         />
+
+    <Button
+        app:layout_constraintLeft_toRightOf="@+id/bt_camera"
+        android:id="@+id/bt_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择图片"
+         />
+    <Button
+        app:layout_constraintLeft_toRightOf="@+id/bt_select"
+        android:id="@+id/bt_camera1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照1"
+        />
+    <Button
+        app:layout_constraintLeft_toRightOf="@+id/bt_camera1"
+        android:id="@+id/bt_camera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照2"
+        />
+</android.support.constraint.ConstraintLayout>

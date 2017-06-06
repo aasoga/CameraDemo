@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#ececec"
+    android:layout_height="100dp">
+<CheckBox
+
+    android:button="@null"
+    android:checked="false"
+    android:background="@drawable/effect_tv_selector"
+    android:id="@+id/hue_tv"
+    android:gravity="center"
+    android:textSize="21sp"
+    android:textColor="#000000"
+    android:layout_width="120dp"
+    android:drawableTop="@mipmap/ic_launcher"
+    android:layout_height="match_parent"
+    android:text="色调"/>
+    <CheckBox
+        android:drawableTop="@mipmap/ic_launcher"
+        android:button="@null"
+        android:checked="false"
+        android:background="@drawable/effect_tv_selector"
+        android:id="@+id/saturation_tv"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:textColor="#000000"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:text="饱和度"/>
+    <CheckBox
+        android:drawableTop="@mipmap/ic_launcher"
+        android:button="@null"
+        android:checked="false"
+        android:background="@drawable/effect_tv_selector"
+        android:id="@+id/bright_tv"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:textColor="#000000"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:text="亮度"/>
+</LinearLayout>

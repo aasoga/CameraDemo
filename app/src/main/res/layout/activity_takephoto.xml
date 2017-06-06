@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:camera="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.example.camerademo.camera.CameraView
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:background="#55000000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/water_bt"
+        android:layout_alignParentRight="true"
+        android:text="添加水印"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/switch_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_camera_top_bar_sw_camera"
+        />
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/switch_iv"
+        android:id="@+id/flash_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/btn_flash_on"
+        />
+
+    <Spinner
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/flash_iv"
+        android:id="@+id/spinner_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+    <com.example.camerademo.camera.FocusImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/focus_iv"
+        camera:focus_focusing_id="@drawable/focus_focusing"
+        camera:focus_focussuccess_id="@drawable/focus_focused"
+        camera:focus_focusfailed_id="@drawable/focus_focus_failed"/>
+    <ImageView
+        android:visibility="gone"
+        android:background="#88000000"
+        android:id="@+id/animate_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/bt_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shutter_photo"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_video"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shutter_video"/>
+    <ImageView
+        android:id="@+id/thumbnail_iv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/iv_switch_mode"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/ic_switch_video"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="#55000000"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/water_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+</RelativeLayout>
